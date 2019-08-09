@@ -13,4 +13,7 @@ public class OperatorFactory {
 	public static Optional<Operation> getOperation(String operation){
 		return Optional.ofNullable(operationMap.get(operation));
 	}
+	public static Operation getOperationNull(String operation){
+		return operationMap.get(operation);
+	}
 }
